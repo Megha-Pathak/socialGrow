@@ -1,8 +1,49 @@
-.SocialGrow {
-  max-width: 1024px;
-  flex-grow: 1;
-    margin: 0 auto;
-    position: relative;
-    width: 100%;
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+html.color-theme-in-transition,
+html.color-theme-in-transition *,
+html.color-theme-in-transition *:before,
+html.color-theme-in-transition *:after {
+  transition: all 300ms !important;
+  transition-delay: 0 !important;
+}
+
+body {
+  --border: rgba(var(--b6a, 219, 219, 219), 1);
+  --boxShadow: rgba(0, 0, 0, 0.1);
+  --text130: #000000;
+  --text: #44475b;
+  --subText: #7c7e8c;
+  --primaryBg: #ffffff;
+  --iconLight: #b0b2ba;
+  --iconMedium: rgba(45, 35, 66, 0.3);
+}
+
+body[class="dark-mode"] {
+  --border: #272727;
+  --iconLight: #7c7e8c;
+  --boxShadow: rgba(0, 0, 0, 0.6);
+  --text130: #ffffff;
+  --text: #dcdcdd;
+  --subText: #dfdfdf;
+  --iconMedium: rgba(45, 35, 66, 0.3);
+  --primaryBg: #10171d;
 }
