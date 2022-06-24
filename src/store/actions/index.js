@@ -1,4 +1,4 @@
-import unsplash from "../../api/index";
+import unsplash from "../../api";
 import {
   CLEAR_USER_PHOTO,
   FETCH_ERROR_DURING_PHOTO,
@@ -29,8 +29,8 @@ export const fetchResponse = () => {
   };
 };
 
-export const fetchUserProfile = (username) => {
-  return async (dispatch) => {
+export const fetchUserProfile = (username: string) => {
+  return async (dispatch: any) => {
     try {
       const response = await unsplash.get(`/users/${username}`);
 
@@ -47,8 +47,8 @@ export const fetchUserProfile = (username) => {
   };
 };
 
-export const fetchUserPhotos = (username, pageNumber) => {
-  return async (dispatch) => {
+export const fetchUserPhotos = (username: string, pageNumber: number) => {
+  return async (dispatch: any) => {
     try {
       const response = await unsplash.get(`/users/${username}/photos`, {
         params: { per_page: 9, page: pageNumber },
@@ -68,7 +68,7 @@ export const fetchUserPhotos = (username, pageNumber) => {
 };
 
 export const clearUserPhotos = () => {
-  return (dispatch) => {
+  return (dispatch: any) => {
     dispatch({
       type: CLEAR_USER_PHOTO,
       payload: [],
