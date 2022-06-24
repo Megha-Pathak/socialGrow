@@ -89,7 +89,7 @@ function UserProfile(props) {
               Grid
             </button>
             <button className="usp301btnTimeline" onClick={setViewToTimeline}>
-              Timeline
+              Stacked
             </button>
           </div>
           {isGridActive ? (
