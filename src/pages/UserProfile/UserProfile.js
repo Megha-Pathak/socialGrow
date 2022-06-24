@@ -13,9 +13,11 @@ import {
   fetchUserProfile,
 } from "../../store/actions";
 import { ErrorPage, ImageCard, PostCard } from "../../components";
+import useDarkMode from "use-dark-mode";
 
 function UserProfile(props) {
   const [isGridActive, setIsGridActive] = useState(true);
+  const darkMode = useDarkMode(false);
   const [isLoading, setIsLoading] = useState(false);
   const urlText = window.location.href;
   const urlUserName = urlText.slice(urlText.lastIndexOf("/") + 1);
@@ -71,25 +73,33 @@ function UserProfile(props) {
               <div className="user-profile-data">
                 <div className="user-name">{username}</div>
                 <div className="user-follow-data">
-                  <span className="usp301userPostCount">
-                    {totalPhotos} Posts
-                  </span>
-                  <span className="usp301userFollowersCount">
-                    {followersCount} Followers
-                  </span>
-                  <span className="usp301userFollowingCount">
-                    {followingCount} Following
-                  </span>
+                  <span>{totalPhotos} Posts</span>
+                  <span>{followersCount} Followers</span>
+                  <span>{followingCount} Following</span>
                 </div>
               </div>
             </div>
           </div>
           <div className="user-profile-view-buttons">
-            <button className="usp301btnGrid" onClick={setViewToGrid}>
-              Grid
+            <button onClick={setViewToGrid}>
+              <img
+                src={
+                  darkMode.value
+                    ? "https://img.icons8.com/ios/30/ffffff/grid.png"
+                    : "https://img.icons8.com/ios/30/000000/grid.png"
+                }
+                alt="grid-button"
+              />
             </button>
-            <button className="usp301btnTimeline" onClick={setViewToTimeline}>
-              Stacked
+            <button onClick={setViewToTimeline}>
+              <img
+                src={
+                  darkMode.value
+                    ? "https://img.icons8.com/ios-glyphs/30/ffffff/list--v1.png"
+                    : "https://img.icons8.com/ios-glyphs/30/000000/list--v1.png"
+                }
+                alt="grid-button"
+              />
             </button>
           </div>
           {isGridActive ? (
@@ -115,7 +125,7 @@ function UserProfile(props) {
 function GridUserInterface(props) {
   const { fetchMorePhotos, totalPhotos, cachedPhotoData } = props;
   return (
-    <div className="usp301gridView">
+    <div>
       <InfiniteScroll
         pageStart={0}
         loadMore={fetchMorePhotos}
@@ -133,7 +143,7 @@ function GridUserInterface(props) {
 function TimeLineUserInterface(props) {
   const { fetchMorePhotos, cachedPhotoData, totalPhotos } = props;
   return (
-    <div className="usp301timeLineView">
+    <div>
       <InfiniteScroll
         pageStart={0}
         loadMore={fetchMorePhotos}

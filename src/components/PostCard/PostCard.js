@@ -51,8 +51,8 @@ export const PostCard = (props) => {
             className="insta-icon"
             src={
               darkMode.value
-                ? "https://img.icons8.com/ios/50/ffffff/topic.png"
-                : "https://img.icons8.com/ios/50/000000/topic.png"
+                ? "https://img.icons8.com/external-sbts2018-outline-sbts2018/58/ffffff/external-comment-social-media-basic-1-sbts2018-outline-sbts2018.png"
+                : "https://img.icons8.com/external-sbts2018-outline-sbts2018/58/000000/external-comment-social-media-basic-1-sbts2018-outline-sbts2018.png"
             }
             alt="comment"
           />
@@ -60,17 +60,17 @@ export const PostCard = (props) => {
             className="insta-icon"
             src={
               darkMode.value
-                ? "https://img.icons8.com/ios/50/ffffff/sent.png"
-                : "https://img.icons8.com/ios/50/000000/sent.png"
+                ? "https://img.icons8.com/material-outlined/24/ffffff/share.png"
+                : "https://img.icons8.com/material-outlined/24/000000/share.png"
             }
-            alt="profile"
+            alt="share"
           />
           <img
             className="insta-icon save-icon"
             src={
               darkMode.value
-                ? "https://img.icons8.com/external-bearicons-detailed-outline-bearicons/64/ffffff/external-Save-social-media-bearicons-detailed-outline-bearicons.png"
-                : "https://img.icons8.com/external-bearicons-detailed-outline-bearicons/64/000000/external-Save-social-media-bearicons-detailed-outline-bearicons.png"
+                ? "https://img.icons8.com/ios/50/ffffff/save--v1.png"
+                : "https://img.icons8.com/ios/50/000000/save--v1.png"
             }
             alt="save"
           />
