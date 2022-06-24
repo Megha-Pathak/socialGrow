@@ -1,0 +1,20 @@
+.newsfeed-container {
+  max-width: 1024px;
+  flex-grow: 1;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+}
+
+.newsfeed-main {
+  display: flex;
+}
+
+@media only screen and (max-width: 630px) {
+  .newsfeed-main {
+    width: 100%;
+  }
+  .newsfeed-story {
+    width: 100%;
+  }
+}

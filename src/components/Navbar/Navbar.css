@@ -1,0 +1,79 @@
+.navbar {
+  box-shadow: 0 8px 8px var(--boxShadow);
+  position: sticky;
+  top: 0;
+  background-color: var(--white);
+  z-index: 1;
+
+  padding: 10px 20px;
+  background: var(--primaryBg);
+  border: 1px solid var(--border);
+}
+.navbar-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.navbar-text {
+  font-family: "Style Script", cursive;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  color: var(--text130);
+  text-decoration: none;
+}
+.light-btn {
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: var(--text130);
+  cursor: pointer;
+}
+.dark-btn {
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: var(--text130);
+  cursor: pointer;
+}
+.searchbar {
+  height: 36px;
+  min-width: 125px;
+  width: 268px;
+}
+.searchbox {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 100%;
+  background: var(--primaryBg);
+  font-size: 16px;
+  color: var(--text130);
+  outline: 0;
+  z-index: 2;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1px 0px 1px 5px;
+}
+.navbar-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 240px;
+  color: white;
+}
+.cursor-disabled {
+  cursor: not-allowed;
+}
+@media only screen and (max-width: 658px) {
+  .searchbar {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hdr01Container {
+    padding: 0px 16px;
+  }
+}
