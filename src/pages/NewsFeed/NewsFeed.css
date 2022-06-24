@@ -10,78 +10,7 @@
   display: flex;
 }
 
-.suggestion-box {
-  width: 300px;
-  height: 300px;
-  margin: 15px;
-  padding: 15px;
-  position: fixed;
-  right: 20%;
-}
-.newsfeed-suggestion {
-  display: flex;
-  justify-content: space-between;
-  align-self: center;
-}
-.suggested-titles {
-  color: gray;
-}
-.newsfeed-see-all {
-  float: right;
-}
-.suggested-user-profile-photo {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  margin-right: 10px;
-  cursor: pointer;
-}
-.user-suggestion {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 10px 0;
-}
-.suggested-user-follow {
-  font-size: 14px;
-  font-weight: bold;
-  color: var(--secondaryClr);
-  cursor: not-allowed;
-}
-.suggested-user {
-  display: flex;
-  align-items: center;
-  font-size: 15px;
-  font-weight: bold;
-  cursor: pointer;
-}
-@media only screen and (max-width: 1530px) {
-  .suggestion-box {
-    display: none;
-  }
-}
-.newsfeed-story-box {
-  margin: 15px 15px 15px 0;
-  border: 1px solid var(--border);
-  width: 630px;
-  min-height: 80px;
-  background: var(--primaryBg);
-  overflow-x: scroll;
-}
-.newsfeed-user-story {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  margin: 10px;
-  border: 1px solid var(--growwRed);
-  cursor: pointer;
-}
 @media only screen and (max-width: 630px) {
-  .newsfeed-story-box {
-    margin: 15px 0;
-    max-width: 100%;
-    height: 80px;
-  }
   .newsfeed-main {
     width: 100%;
   }
