@@ -28,22 +28,22 @@ html.color-theme-in-transition *:after {
 
 body {
   --border: rgba(var(--b6a, 219, 219, 219), 1);
-  --boxShadow: rgba(0, 0, 0, 0.1);
-  --text130: #000000;
-  --text: #44475b;
-  --subText: #7c7e8c;
-  --primaryBg: #ffffff;
-  --iconLight: #b0b2ba;
-  --iconMedium: rgba(45, 35, 66, 0.3);
+  --box-shadow: rgba(0, 0, 0, 0.1);
+  --text-accent-01: #000000;
+  --text-accent-02: #44475b;
+  ----text-accent-03: #7c7e8c;
+  --primary-background-color: #ffffff;
+  --icon-light-color: #b0b2ba;
+  --icon-color: rgba(45, 35, 66, 0.3);
 }
 
 body[class="dark-mode"] {
   --border: #272727;
-  --iconLight: #7c7e8c;
-  --boxShadow: rgba(0, 0, 0, 0.6);
-  --text130: #ffffff;
-  --text: #dcdcdd;
-  --subText: #dfdfdf;
-  --iconMedium: rgba(45, 35, 66, 0.3);
-  --primaryBg: #10171d;
+  --icon-light-color: #7c7e8c;
+  --box-shadow: rgba(0, 0, 0, 0.6);
+  --text-accent-01: #ffffff;
+  --text-accent-02: #dcdcdd;
+  ----text-accent-03: #dfdfdf;
+  --icon-color: rgba(45, 35, 66, 0.3);
+  --primary-background-color: #10171d;
 }
