@@ -37,7 +37,7 @@ export const PostCard = (props) => {
       <img
         className="user-post"
         src={imageURL}
-        alt="luffy"
+        alt="post"
         onLoad={MyFacebookLoader}
       />
       <div className="pc201PopularityIcon">
@@ -45,14 +45,14 @@ export const PostCard = (props) => {
           <img
             className="insta-icon like-icon"
             src={""}
-            alt="likedHeart"
+            alt="to-be-liked"
             onClick={handleLiked}
           />
         ) : (
           <img
             className="insta-icon like-icon"
             src={""}
-            alt="heart"
+            alt="liked"
             onClick={handleLiked}
           />
         )}
