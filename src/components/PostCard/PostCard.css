@@ -4,7 +4,7 @@
   width: 630px;
   min-height: 500px;
   border-radius: 4px;
-  background: var(--primaryBg);
+  background: var(--primary-background-color);
 }
 
 .post-card-user-info {
@@ -55,7 +55,7 @@
   font-weight: 600;
   font-size: 14px;
   margin: 8px 10px;
-  color: var(--text);
+  color: var(--text-accent-02);
 }
 
 .post-caption {

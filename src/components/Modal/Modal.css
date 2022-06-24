@@ -1,7 +1,7 @@
 .modal-landscape {
   position: fixed;
   z-index: 500;
-  background-color: var(--primaryBg);
+  background-color: var(--primary-background-color);
   width: auto;
   border: 1px solid var(--border);
   padding: 4px 16px;
@@ -15,7 +15,7 @@
 .modal-portrait {
   position: fixed;
   z-index: 500;
-  background-color: var(--primaryBg);
+  background-color: var(--primary-background-color);
   width: auto;
   border: 1px solid var(--border);
   padding: 4px 16px;
