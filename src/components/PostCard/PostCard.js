@@ -13,16 +13,7 @@ export const PostCard = (props) => {
   };
   const { postData } = props;
   const { id, caption, imageURL, username, profilePic, likes } = postData;
-  const handleClick = (event) => {
-    const div = event.currentTarget;
-    console.log(
-      "Element name: ",
-      div.tagName,
-      "Width: ",
-      div.clientWidth,
-      "Height: ",
-      div.clientHeight
-    );
+  const handleClick = () => {
     navigate(`/profile/:${id}`);
   };
   const handleLiked = () => {
