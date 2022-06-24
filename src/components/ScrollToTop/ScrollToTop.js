@@ -33,8 +33,8 @@ export const ScrollToTop = () => {
       <img
         src={
           darkMode.value
-            ? "https://img.icons8.com/ios/28/ffffff/circled-up-2.png"
-            : "https://img.icons8.com/ios/28/000000/circled-up-2.png"
+            ? "https://img.icons8.com/ios-glyphs/30/ffffff/up--v1.png"
+            : "https://img.icons8.com/ios-glyphs/30/000000/up--v1.png"
         }
         alt="stt503btnTheme"
       />
