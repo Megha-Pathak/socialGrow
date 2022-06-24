@@ -62,6 +62,7 @@ body.dark-mode .user-reach-out {
   border-width: 0;
   box-sizing: border-box;
   color: var(--text-accent-02);
+  background-color: var(--primary-background-color);
   margin-top: 0.5rem;
   cursor: pointer;
   display: inline-flex;

@@ -42,8 +42,8 @@ export const Navbar = () => {
             alt="my-messenger"
             src={
               darkMode.value
-                ? "https://img.icons8.com/ios/28/ffffff/facebook-messenger--v1.png"
-                : "https://img.icons8.com/ios/28/000000/facebook-messenger--v1.png"
+                ? "https://img.icons8.com/ios-glyphs/30/ffffff/new-message.png"
+                : "https://img.icons8.com/ios-glyphs/30/000000/new-message.png"
             }
             className="cursor-disabled"
           />
@@ -51,8 +51,8 @@ export const Navbar = () => {
             alt="add-post"
             src={
               darkMode.value
-                ? "https://img.icons8.com/ios/28/ffffff/add--v2.png"
-                : "https://img.icons8.com/ios/28/000000/add--v2.png"
+                ? "https://img.icons8.com/ios-glyphs/30/ffffff/add-image.png"
+                : "https://img.icons8.com/ios-glyphs/30/000000/add-image.png"
             }
             className="cursor-disabled"
           />
@@ -60,8 +60,8 @@ export const Navbar = () => {
             alt="my-likes"
             src={
               darkMode.value
-                ? "https://img.icons8.com/ios/28/ffffff/like--v1.png"
-                : "https://img.icons8.com/ios/28/000000/like--v1.png"
+                ? "https://img.icons8.com/ios-glyphs/30/ffffff/add-to-favorites.png"
+                : "https://img.icons8.com/ios-glyphs/30/000000/add-to-favorites.png"
             }
             className="cursor-disabled"
           />
@@ -69,8 +69,8 @@ export const Navbar = () => {
             alt="my-profile"
             src={
               darkMode.value
-                ? "https://img.icons8.com/ios/28/ffffff/user-male-circle.png"
-                : "https://img.icons8.com/ios/28/000000/user-male-circle.png"
+                ? "https://img.icons8.com/ios-glyphs/30/ffffff/drag-list-down.png"
+                : "https://img.icons8.com/ios-glyphs/30/000000/drag-list-down.png"
             }
             className="cursor-disabled"
           />

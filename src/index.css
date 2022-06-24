@@ -16,5 +16,5 @@ code {
 }
 body.dark-mode {
   background-color: var(--primary-background-color);
-  color: var(----text-accent-03);
+  color: var(--text-accent-03);
 }

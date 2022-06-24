@@ -31,7 +31,7 @@ body {
   --box-shadow: rgba(0, 0, 0, 0.1);
   --text-accent-01: #000000;
   --text-accent-02: #44475b;
-  ----text-accent-03: #7c7e8c;
+  --text-accent-03: #7c7e8c;
   --primary-background-color: #ffffff;
   --icon-light-color: #b0b2ba;
   --icon-color: rgba(45, 35, 66, 0.3);
@@ -43,7 +43,7 @@ body[class="dark-mode"] {
   --box-shadow: rgba(0, 0, 0, 0.6);
   --text-accent-01: #ffffff;
   --text-accent-02: #dcdcdd;
-  ----text-accent-03: #dfdfdf;
+  --text-accent-03: #dfdfdf;
   --icon-color: rgba(45, 35, 66, 0.3);
   --primary-background-color: #10171d;
 }
